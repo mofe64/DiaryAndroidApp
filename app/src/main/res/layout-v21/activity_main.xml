@@ -4,22 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    tools:context=".MainActivity"
+    android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:padding="10dp"
+       android:gravity="center_horizontal"
         android:text="@string/welcomeMessage"
-        android:textAppearance="@android:style/TextAppearance.Large">
+        android:textAppearance="@android:style/TextAppearance.Material.Large">
+        
     </TextView>
-
     <ListView
         android:id="@+id/list_options"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:entries="@array/options">
     </ListView>
 
 </LinearLayout>
