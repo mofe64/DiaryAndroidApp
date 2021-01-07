@@ -2,6 +2,7 @@
     <string name="app_name">Diary</string>
     <string name="welcomeMessage">Welcome to your diary</string>
     <string name="editButtonText">Edit Entry</string>
+    <string name="ViewEntryLabel">View Entry</string>
     <string-array name="options">
         <item>Create new entry</item>
         <item>View All Entries</item>

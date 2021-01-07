@@ -1,6 +1,7 @@
 package com.nubari.diary;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_main);
+        System.out.println("tool is " + toolbar);
+        setSupportActionBar(toolbar);
         List<Entry> entries = diary.getEntries();
         Collections.reverse(entries);
         ArrayAdapter<Entry> entryArrayAdapter = new ArrayAdapter<>(
@@ -42,4 +46,5 @@ public class MainActivity extends AppCompatActivity {
         };
         latestEntriesView.setOnItemClickListener(itemClickListener);
     }
+
 }
