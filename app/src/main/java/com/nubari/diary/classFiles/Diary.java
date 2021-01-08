@@ -1,21 +1,27 @@
 package com.nubari.diary.classFiles;
 
 import android.os.Build;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 import androidx.annotation.RequiresApi;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Diary {
+public class Diary implements Parcelable {
     private final List<Entry> entries;
     private final int entryLimit;
 
     public Diary(int entryLimit) {
-        this.entries = new LinkedList<>();
+        this.entries = new ArrayList<>();
         this.entryLimit = entryLimit;
+    }
+
+    protected Diary(Parcel in) {
+        this.entryLimit = in.readInt();
+        this.entries = in.createTypedArrayList(Entry.CREATOR);
     }
 
     public int getEntryLimit() {
@@ -72,4 +78,26 @@ public class Diary {
             entries.add(entryToUpdate);
         }
     }
+    @Override
+    public int describeContents(){
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags){
+        dest.writeInt(this.entryLimit);
+        dest.writeTypedList(this.entries);
+    }
+
+    public static final Parcelable.Creator<Diary> CREATOR = new Creator<Diary>() {
+        @Override
+        public Diary createFromParcel(Parcel source) {
+            return new Diary(source);
+        }
+
+        @Override
+        public Diary[] newArray(int size) {
+            return new Diary[size];
+        }
+    };
 }
