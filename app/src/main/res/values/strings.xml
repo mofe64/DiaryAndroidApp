@@ -3,6 +3,11 @@
     <string name="welcomeMessage">Welcome to your diary</string>
     <string name="editButtonText">Edit Entry</string>
     <string name="ViewEntryLabel">View Entry</string>
+    <string name="entryTitleHint">Enter Entry Title</string>
+    <string name="entryBodyHint">Enter Entry Body</string>
+    <string name="submitButtonText">Create Entry</string>
+    <string name="create_entry_label">Create Entry</string>
+    <string name="create_entry_action_title">Create Entry</string>
     <string-array name="options">
         <item>Create new entry</item>
         <item>View All Entries</item>

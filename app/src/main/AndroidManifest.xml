@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".CreateEntryActivity"
+            android:label="@string/create_entry_label">
+
+        </activity>
+        <activity
             android:name=".EntryActivity"
             android:label="@string/ViewEntryLabel">
         </activity>
