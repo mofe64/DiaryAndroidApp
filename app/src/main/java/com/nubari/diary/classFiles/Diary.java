@@ -14,9 +14,11 @@ public class Diary implements Parcelable {
     private final List<Entry> entries;
     private final int entryLimit;
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public Diary(int entryLimit) {
         this.entries = new ArrayList<>();
         this.entryLimit = entryLimit;
+//        entries.add(new Entry("test Title", "test body"));
     }
 
     protected Diary(Parcel in) {
@@ -100,4 +102,6 @@ public class Diary implements Parcelable {
             return new Diary[size];
         }
     };
+
+
 }

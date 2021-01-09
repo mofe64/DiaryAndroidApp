@@ -13,7 +13,7 @@
         android:textAppearance="@android:style/TextAppearance.Large"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:id="@+id/entry_title">
+        android:id="@+id/entry_title_edit">
     </TextView>
 
     <ScrollView
@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_gravity="center_horizontal"
-                android:id="@+id/entry_body">
+                android:id="@+id/entry_body_edit">
             </TextView>
             <Button
                 android:layout_width="wrap_content"

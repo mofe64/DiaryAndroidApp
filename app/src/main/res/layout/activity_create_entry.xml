@@ -18,14 +18,20 @@ tools:context=".CreateEntryActivity">
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:hint="@string/entryTitleHint"
-        android:id="@id/entry_title"/>
+        android:id="@+id/create_entry_title"
+        android:inputType="text">
+
+    </EditText>
+
     <EditText
+        android:id="@+id/create_entry_body"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:hint="@string/entryBodyHint"
         android:gravity="start"
-        android:id="@+id/entry_body"/>
+        android:hint="@string/entryBodyHint"
+        android:inputType="text">
+    </EditText>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

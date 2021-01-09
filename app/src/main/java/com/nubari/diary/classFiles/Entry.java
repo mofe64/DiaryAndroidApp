@@ -4,6 +4,7 @@ import android.os.Build;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 
 import java.time.LocalDate;
@@ -72,5 +73,11 @@ public class Entry implements Parcelable {
         dest.writeString(this.title);
         dest.writeString(this.body);
         dest.writeString(this.dateCreated);
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return this.title;
     }
 }
