@@ -6,11 +6,32 @@ android:layout_height="match_parent"
 android:fitsSystemWindows="true"
 android:orientation="vertical"
 tools:context=".CreateEntryActivity">
-
+<!--<com.google.android.material.appbar.AppBarLayout-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>-->
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        -->
+<!--    </androidx.core.widget.NestedScrollView>-->
+<!--    <com.google.android.material.appbar.CollapsingToolbarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        -->
+<!--    </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        -->
+<!--    </com.google.android.material.floatingactionbutton.FloatingActionButton>-->
 <include
     android:id="@+id/toolbar_createEntry"
     layout="@layout/toolbar_main"
     />
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="match_parent" />-->
 
     <EditText
         android:layout_width="match_parent"
